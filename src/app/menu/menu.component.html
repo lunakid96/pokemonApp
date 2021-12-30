@@ -1,0 +1,29 @@
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Games
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown" *ngFor="let version of versionList">
+          <a class="dropdown-item">{{version.name}}</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Generations
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown" *ngFor="let generation of generationList">
+          <a class="dropdown-item" href="#">{{generation.name}}</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Locations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Items</a>
+      </li>
+    </ul>
+  </div>

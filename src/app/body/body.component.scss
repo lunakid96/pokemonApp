@@ -1,0 +1,25 @@
+::ng-deep app-body {
+    .space-bottom {
+        width: 100%;
+        height: 10px;
+        border-bottom: 1px solid;
+    }
+    .space-top {
+        width: 100%;
+        height: 10px;
+        border-top: 1px solid;
+    }
+    .invisibleBtn {
+        border: 0;
+        background: transparent;
+    }
+    .card {
+        margin: 10px 0;
+    }
+    #managerBtn {
+        background: transparent;
+        border: 0;
+        width: 110px;
+        height: 50px;
+    }
+}

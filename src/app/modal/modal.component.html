@@ -1,0 +1,62 @@
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Pokemon Info</h5>
+            <button type="button" class="close" aria-label="Close" (click)="closeModal($event)">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img src="{{imgPokemon}}" alt="pokemon1" class="img-thumbnail">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label>Name:</label>
+                    </div>
+                    <div class="col">
+                        <label>{{pokemonInfo.name}}</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label>Base experience:</label>
+                    </div>
+                    <div class="col">
+                        <label>{{pokemonInfo.base_experience}}</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label>Height:</label>
+                    </div>
+                    <div class="col">
+                        <label>{{pokemonInfo.height}}</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label>Order:</label>
+                    </div>
+                    <div class="col">
+                        <label>{{pokemonInfo.order}}</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label>Weight:</label>
+                    </div>
+                    <div class="col">
+                        <label>{{pokemonInfo.weight}}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" (click)="closeModal($event)">Close</button>
+        </div>
+    </div>
+</div>

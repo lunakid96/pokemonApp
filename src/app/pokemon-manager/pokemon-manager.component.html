@@ -1,0 +1,25 @@
+<div class="container">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of pokemonPerRow">
+            <td *ngFor="let pokemon of row">
+                <div class="row">
+                    <img src="{{pokemon.sprites.front_default}}" alt="pokemon1" class="img-thumbnail">
+                </div>
+                <div class="row">
+                    <button>{{pokemon.name}}</button>
+                </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</div>
